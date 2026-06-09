@@ -1,0 +1,63 @@
+DEPLOYING THE PIANO WORKSHOP PAGE TO GITHUB PAGES (FREE)
+========================================================
+
+This folder is a complete, ready-to-publish website. The homepage is
+index.html. Everything it needs (app/, assets/, _ds/, tweaks-panel.jsx,
+and the hidden .nojekyll file) is already inside.
+
+IMPORTANT: keep the .nojekyll file. It is what makes GitHub serve the
+_ds/ design-system folder (GitHub hides underscore folders without it).
+
+
+STEP 1 — Create a free GitHub account
+  Go to https://github.com and sign up (skip if you already have one).
+
+STEP 2 — Make a NEW repository
+  - Click the "+" (top right) -> "New repository".
+  - Name it:  piano-workshop
+  - Set it to: Public
+  - Do NOT add a README (keep it empty).
+  - Click "Create repository".
+  (Use a brand-new repo, NOT your siliana-website repo, so this stays
+   separate from your Netlify site and uses zero Netlify credits.)
+
+STEP 3 — Upload these files
+  - On the new repo page, click "uploading an existing file"
+    (or "Add file" -> "Upload files").
+  - Open this deploy folder, select EVERYTHING inside it
+    (index.html, app, assets, _ds, tweaks-panel.jsx, .nojekyll),
+    and drag it all into the browser.
+  - Wait for the files to finish uploading.
+  - Click "Commit changes".
+
+  Tip: if the .nojekyll file is hard to select (hidden file), you can
+  instead click "Add file" -> "Create new file", name it  .nojekyll  ,
+  leave it empty, and commit. It must exist in the repo root.
+
+STEP 4 — Turn on GitHub Pages
+  - In the repo, go to: Settings -> Pages (left sidebar).
+  - Under "Build and deployment":
+      Source = "Deploy from a branch"
+      Branch = "main"   Folder = "/ (root)"
+  - Click Save.
+
+STEP 5 — Get your live link
+  - Wait about 1 minute, then refresh the Settings -> Pages screen.
+  - It will show: "Your site is live at
+    https://YOUR-USERNAME.github.io/piano-workshop/"
+  - That is your shareable link. Done!
+
+
+UPDATING LATER
+  To change the page, upload the changed file(s) again (same names) and
+  commit. The live site refreshes within a minute.
+
+CUSTOM DOMAIN (optional)
+  In Settings -> Pages you can add a subdomain like
+  workshop.silianamusic.com for free (you add one DNS record at your
+  domain provider). Ask and I'll walk you through it.
+
+NOTE ON THE REGISTRATION FORM
+  The form currently shows a thank-you message but does not yet send
+  anywhere. To connect it to MailerLite, send me your MailerLite
+  embedded-form code and I'll wire it up without changing the design.

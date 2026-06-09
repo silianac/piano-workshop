@@ -1,0 +1,68 @@
+/* ============================================================
+   SILIANA'S MUSIC STUDIO — COLOR TOKENS
+   A warm, editorial palette drawn from the brand swatch sheet.
+   Base palette = the six named brand colors.
+   Semantic aliases describe ROLE, not hue — use these in UI.
+   ============================================================ */
+
+:root {
+  /* ---- Base palette (the six brand colors) ---- */
+  --ivory:       #F3EFDE; /* "Beige" — primary page background          */
+  --warm-cream:  #FFF1C1; /* "Cream" — soft highlight surface           */
+  --sage:        #DBDDB6; /* "Green" — calm secondary surface           */
+  --terracotta:  #DE6A57; /* "Red"   — primary accent / calls to action */
+  --gold:        #F7D56A; /* "Yellow"— warm highlight / joy accent      */
+  --ink:         #131F26; /* "Black" — text & dark surfaces             */
+
+  /* ---- Tints & shades (derived, for depth) ---- */
+  --terracotta-deep: #C85A48; /* hover / pressed accent          */
+  --terracotta-soft: rgba(222, 106, 87, 0.12);
+  --gold-soft:       rgba(247, 213, 106, 0.35);
+  --sage-soft:       rgba(219, 221, 182, 0.45);
+  --cream-veil:      rgba(255, 241, 193, 0.60);
+
+  /* ---- Ink opacities (text & lines on light) ---- */
+  --ink-soft: rgba(19, 31, 38, 0.72); /* secondary text / body  */
+  --ink-mute: rgba(19, 31, 38, 0.55); /* captions / placeholder */
+  --ink-line: rgba(19, 31, 38, 0.12); /* hairline borders       */
+  --ink-faint:rgba(19, 31, 38, 0.06); /* faint fills / dividers */
+
+  /* ---- Ivory opacities (text & lines on dark) ---- */
+  --ivory-soft: rgba(243, 239, 222, 0.72);
+  --ivory-mute: rgba(243, 239, 222, 0.55);
+  --ivory-line: rgba(243, 239, 222, 0.16);
+
+  /* ============================================================
+     SEMANTIC ALIASES — reference these in components & screens
+     ============================================================ */
+
+  /* Surfaces */
+  --surface-page:   var(--ivory);
+  --surface-card:   var(--ivory);
+  --surface-raised: #FBF8EE;          /* card lifted above ivory page */
+  --surface-cream:  var(--warm-cream);
+  --surface-sage:   var(--sage);
+  --surface-dark:   var(--ink);
+
+  /* Text */
+  --text-primary:   var(--ink);
+  --text-body:      var(--ink-soft);
+  --text-muted:     var(--ink-mute);
+  --text-accent:    var(--terracotta);
+  --text-on-dark:   var(--ivory);
+  --text-on-dark-soft: var(--ivory-soft);
+
+  /* Accent / interactive */
+  --accent:         var(--terracotta);
+  --accent-hover:   var(--terracotta-deep);
+  --accent-wash:    var(--terracotta-soft);
+  --highlight:      var(--gold);
+
+  /* Lines & borders */
+  --border-subtle:  var(--ink-line);
+  --border-strong:  var(--ink);
+  --divider:        var(--ink-faint);
+
+  /* Focus ring */
+  --focus-ring:     rgba(222, 106, 87, 0.45);
+}

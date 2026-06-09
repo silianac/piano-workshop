@@ -1,0 +1,38 @@
+/* ============================================================
+   SILIANA'S MUSIC STUDIO — SPACING & LAYOUT TOKENS
+   A soft, generous rhythm. Base unit = 4px.
+   Sections breathe; the studio voice is calm and unhurried.
+   ============================================================ */
+
+:root {
+  /* ---- Spacing scale (4px base) ---- */
+  --space-0:  0;
+  --space-1:  4px;
+  --space-2:  8px;
+  --space-3:  12px;
+  --space-4:  16px;
+  --space-5:  20px;
+  --space-6:  24px;
+  --space-8:  32px;
+  --space-10: 40px;
+  --space-12: 48px;
+  --space-16: 64px;
+  --space-20: 80px;
+  --space-24: 96px;
+  --space-32: 128px;
+
+  /* ---- Section rhythm (vertical padding of page sections) ---- */
+  --section-y:       clamp(80px, 12vw, 140px); /* @kind spacing */
+  --section-y-tight: clamp(60px, 8vw, 100px);   /* @kind spacing */
+
+  /* ---- Container widths ---- */
+  --container:        1200px; /* default content width  */
+  --container-narrow: 760px;  /* long-form reading       */
+  --container-wide:   1320px; /* full hero / imagery     */
+  --gutter:           24px;   /* horizontal page padding */
+
+  /* ---- Component padding presets ---- */
+  --pad-card:    34px 30px;   /* default card            */
+  --pad-callout: 30px 34px;   /* callout block           */
+  --pad-pill:    14px 28px;   /* button                  */
+}
