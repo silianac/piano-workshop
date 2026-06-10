@@ -4,7 +4,7 @@
 function DetailsBand() {
   const items = [
     { v: <span>5<small>–</small>7</span>, l: 'Ages' },
-    { v: 'Sat 12 July', l: '10:00 – 11:00' },
+    { v: 'Sat 11 July', l: '10:00 – 11:00' },
     { v: '1 hour', l: 'Single session' },
     { v: <span>3<small>–</small>5</span>, l: 'Children' },
     { v: '€20', l: 'Per child' },
