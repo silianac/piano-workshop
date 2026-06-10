@@ -67,7 +67,7 @@ function HeroSplit({ headline }) {
 function HeroInvite({ headline }) {
   const { SectionLabel } = window.SilianaSMusicStudioDesignSystem_18f167;
   const ticket = [
-    { v: 'Sat 12 July', l: '10:00 – 11:00' },
+    { v: 'Sat 11 July', l: '10:00 – 11:00' },
     { v: 'Ages 5–7', l: 'Beginners' },
     { v: '€20', l: 'Per child' },
     { v: 'Yavorov', l: 'Sofia' },
