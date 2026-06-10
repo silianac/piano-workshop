@@ -28,7 +28,7 @@ function Register() {
     <section className="register" id="register">
       <div className="container-narrow">
         <div className="section-head" style={{ textAlign: 'center' }}>
-          <span className="sl"><SectionLabel variant="kicker">Saturday 12 July · 10:00 – 11:00</SectionLabel></span>
+          <span className="sl"><SectionLabel variant="kicker">Saturday 11 July · 10:00 – 11:00</SectionLabel></span>
         </div>
         <h2>Reserve your child's <em>place</em>.</h2>
         <p className="register-intro">Tell me a little about your family and I'll be in touch to confirm your child's place. €20 per child.</p>
@@ -38,7 +38,7 @@ function Register() {
           <div className="form-message">
             <img className="clef" src="assets/treble-clef.png" alt="" aria-hidden="true" />
             <h3>Thank you{parent ? ', ' + parent.split(' ')[0] : ''}.</h3>
-            <p>Your request is on its way. I'll write back soon to confirm your child's place for Saturday 12 July.</p>
+            <p>Your request is on its way. I'll write back soon to confirm your child's place for Saturday 11 July.</p>
           </div>
         ) : (
           <div className="reg-wrap">
